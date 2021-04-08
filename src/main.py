@@ -45,7 +45,7 @@ cubes=[Cube((x,0,z)) for x,z in pacman_points]
 while True:
     dt=clock.tick()/1000
     for evt in pygame.event.get():
-        if evt.type==pygame.QUIT:pygame.quit;sys.exit()
+        if evt.type==pygame.QUIT:pygame.quit();sys.exit()
         if evt.type==pygame.KEYDOWN:
             if evt.key==pygame.K_ESCAPE:pygame.quit();sys.exit();
         cam.events(evt)
